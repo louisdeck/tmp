@@ -10,7 +10,7 @@ do
     for j in {0..255}
     do
         #echo "10.128.$i.$j"
-        nmap -P0 -e eth1 -S 10.128.$i.$j 10.16.$i.$j
+        nmap -sn -e eth1 -S 10.128.$i.$j 10.16.$i.$j
     done
 done
 
